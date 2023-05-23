@@ -10,9 +10,14 @@ export class PolylinesController {
   ) {
   }
 
-  @Get()
-  async findAll() {
-    return await this.polylinesService.findAll();
+  @Get('lines-routes')
+  async findAllLinesRoutes() {
+    return await this.polylinesService.findAllLinesRoutes();
+  }
+
+  @Get('channels')
+  async findAllChannels() {
+    return await this.polylinesService.findAllChannels();
   }
 
   @Get("find-one-by-line/:line")
