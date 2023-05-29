@@ -5,6 +5,7 @@ import { MongooseModule } from "@nestjs/mongoose";
 import { MarkersModule } from "@markers/markers.module";
 import { PolylinesModule } from '@polylines/polylines.module';
 import { LinesModule } from './lines/lines.module';
+import { LinesRoutesModule } from './lines-routes/lines-routes.module';
 
 @Module({
   imports: [
@@ -12,6 +13,7 @@ import { LinesModule } from './lines/lines.module';
     MarkersModule,
     PolylinesModule,
     LinesModule,
+    LinesRoutesModule,
   ],
   controllers: [ AppController ],
   providers: [ AppService ]

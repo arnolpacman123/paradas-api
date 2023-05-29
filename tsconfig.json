@@ -24,6 +24,9 @@
       "@polylines/*": [
         "src/polylines/*"
       ],
+      "@lines-routes/*": [
+        "src/lines-routes/*"
+      ],
       "@lines/*": [
         "src/lines/*"
       ],

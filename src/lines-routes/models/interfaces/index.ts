@@ -1,0 +1,1 @@
+export { LineRoutesOptions } from '@lines-routes/models/interfaces/line-routes-options.interface';
