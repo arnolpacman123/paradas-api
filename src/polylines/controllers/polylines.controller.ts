@@ -33,10 +33,4 @@ export class PolylinesController {
   ) {
     return await this.polylinesService.findOneByStand(standDto);
   }
-
-  @Get("seed")
-  async seed() {
-    return await this.polylinesService.seed();
-  }
-
 }
