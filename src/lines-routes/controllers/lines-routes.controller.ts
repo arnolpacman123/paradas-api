@@ -14,16 +14,16 @@ export class LinesRoutesController {
     return await this.linesRoutesService.findAll();
   }
 
+  @Get('seed')
+  async seed() {
+    return await this.linesRoutesService.seed();
+  } 
+
   @Get(':line')
   async findOneByLine(
     @Param('line') line: string
   ) {
     return await this.linesRoutesService.findOneByLine(line);
-  }
-
-  @Get('seed')
-  async seed() {
-    return await this.linesRoutesService.seed();
   }
 
 }
